@@ -1,0 +1,10 @@
+network
+A computer network, in computer science and telecommunications, is a type of telecommunications network characterized by a set of hardware devices with appropriate switching software, i.e. nodes connected to each other by special communication channels (links), such to provide a communication service that allows the exchange and sharing of data and communication between multiple users or distributed devices or terminals. The data is transferred in the form of PDU (Packet Data Unit), consisting of a header (which contains the data for the delivery of the message) and a body (which contains the body of the message), all regulated by rigid protocols.
+Binary number
+A binary number is a number expressed in the base-2 numeral system or binary numeral system, which uses only two symbols: typically "0" (zero) and "1" (one).
+ADDRESS
+is a numeric label that uniquely identifies a device called host connected to a computer network that uses the Internet Protocol as the network protocol for routing / addressing, therefore inserted in the header of the IP datagram for addressing via precisely the IP protocol.
+HOST	
+A network host is a computer or other device connected to a computer network. A host may work as a server offering information resources, services, and applications to users or other hosts on the network. Hosts are assigned at least one network address.
+Internet protocol
+The Internet Protocol (IP) is the principal communications protocol in the Internet protocol suite for relaying datagrams across network boundaries. Its routing function enables internetworking, and essentially establishes the Internet.

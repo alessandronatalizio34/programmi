@@ -1,0 +1,651 @@
+TERMINALE   UBUNTU
+TUTTI I COMANDI ALTRAVERSO IL TERMINALE DI UBUNTU:
+•	sudo ("superuser , azione del superutente"): un'espressione molto comune che indica che l'azione intrapresa deve essere autorizzata con la password di amministratore.
+•	cd ("change directory, cambia cartella"): con questo comando può sfogliare le cartelle del sistema. Digitare semplicemente "cd" ti porterà alla cartella "home", ovvero quella in cui ti trovi come impostazione predefinita all'inizio della sessione del Terminale.
+•	cd / - Ti porta alla cartella root.
+•	cd .. - Ti porta alla cartella superiore.
+•	cd - - Ti porta alla cartella precedente.
+	pwd ("print working directory, stampa cartella di lavoro"): mostra la tua attuale posizione nel sistema.
+	ls ("lista"): elenca tutti i file nella cartella attuale. Digitando "ls ~" potrai visualizzare i file nella cartella "home", oppure aggiungendo il nome di una cartella specifica potrai visualizzare i file al suo interno. Ad esempio "ls ~/Desktop" ti mostrerà i file nella cartella "Desktop".
+	cp ("copia"): ti permette di copiare un file. Per farlo, aggiungi il nome del file che desideri copiare insieme al comando, assumendo che questo si trovi nella cartella nella quale ti trovi. Altrimenti, digita "cp ~/<file path>" per specificare la posizione del file da copiare.
+	mv ("muovi"): con questo comando, puoi rinominare o spostare un file. Se vuoi rinominare il file "big" come "bang", puoi scrivere "mv big bang". Questa operazione può essere effettuata solo se ti trovi nella cartella che contiene il file, altrimenti dovrai specificarne il percorso. Digitando ad esempio "mv bang ~/Desktop", il file "bang" sarà spostato dalla cartella "home" in quella "Desktop", e se vorrai rinominarlo ti basterà aggiungere il nuovo nome in seguito di quello vecchio nel comando.
+	rm ("rimuovi"): questo comando rimuove semplicemente un file. Ti basterà specificarne il percorso e il nome.
+•	rmdir ("rimuovi directory"): rimuove una directory vuota.
+•	rm-r ("rimuovi in modo ricorsivo"): rimuove una cartella e il suo contenuto. naturalmente dovresti specificare il percorso della cartella.
+	mkdir ("crea directory"): ti permette di creare una cartella. Ad esempio: con "mkdir file privati" creerai una cartella chiamata "file privati" (nella cartella home, a meno che tu non abbia specificato un percorso diverso).
+•	man man: questa pagina del manuale ti parla del manuale stesso.
+•	man intro: ti dà una breve introduzione ai comandi Linux.
+•	info info: un'introduzione alle pagine di introduzione.
+•	Quando hai bisogno di informazioni su un comando, digita "<command name>-h" o "<command name>--help", se il primo comando non ha funzionato. Alcune linee di comando possono non riconoscere -h with --help
+•	df (display filesystem, mostra filesystem): mostra la percentuale di spazio su disco occupato su ogni partizione. df -h visualizza il risultato in MB e GB invece di usare i blocchi, e questo lo rende più utile.
+•	du (directory usage, utilizzo cartelle): mostra quanto spazio su disco viene occupato da una cartella e tutte le sue sottocartelle. du -s ti fornisce un riassunto, mentre du -h ti permette di visualizzare risultati comprensibili.
+•	Il comando free ti comunica quanto spazio libero su disco è disponibile. Per vedere questa statistica in MB, digita free-m.
+•	uname -a: stampa tutte le informazioni sul tuo sistema.
+•	Isb_release -a: stampa le informazioni sulla tua versione di Linux.
+•	top: questo comando inizia il monitoraggio del sistema, mostrandoti l'utilizzo di RAM, CPU e swap più il totale dei processi in esecuzione. Premi q per spegnere il monitoraggio.
+•	adduser: aggiunge un utente al tuo sistema.
+•	addgroup: aggiunge un gruppo al sistema.
+•	alias: crea un alias.
+•	apropos: cerca tra le pagine del manuale di Aiuto (man -k)
+•	apt-get: cerca e installa pacchetti software (Debian/Ubuntu)
+•	aptitude: cerca e installa pacchetti software (Debian/Ubuntu)
+•	aspell: controllo ortografia
+•	awk: trova e sostituisci testo, ordina/convalida/indicizza database
+•	basename: elimina le directory e i suffissi dai nomi file.
+•	bash: GNU Bourne-Again SHell
+•	bc: linguaggio del calcolatore di precisione arbitraria.
+•	bg: torna al background.
+•	break: esce da un loop.
+•	builtin: esegue un comando integrato della shell
+•	bzip2: comprime o decomprime i file indicati
+•	cal: mostra un calendario
+•	case: esegue un comando con una condizione
+•	cat: mostra i contenuti di un file
+•	cd: cambia directory
+•	cfdisk: tavola di manipolazione delle partizioni di Linux
+•	chgrp: modifica l'appartenenza di un gruppo
+•	chmod: modifica i permessi di accesso
+•	chown: modifica il proprietario e il gruppo del file
+•	chroot: esegue un comando con una diversa directory di root
+•	chkconfig: servizi di sistema (runlevel)
+•	cksum: stampa il checksum CRC e conta i byte
+•	clear: svuota la schermata del terminale
+•	cmp: confronta due file
+•	comm: confronta due file ordinati riga per riga
+•	command: esegue un comando, ignorando le funzioni della shell
+•	continue: riprende la prossima iterazione di un loop
+•	cp: copia uno i più file in un'altra posizione
+•	cron: daemon per eseguire comandi pianificati
+•	crontab: pianifica un comando da eseguire in un secondo momento
+•	csplit: divide un file in parti determinate dal contesto
+•	cut: divide un file in molte parti
+•	date: mostra o modifica la data e l'ora
+•	dc: calcolatrice
+•	dd: converte e copia un file, scrive gli header del disco e i registri di avvio
+•	ddrescue: strumento di recupero dati
+•	declare: dichiara una variabile e gli assegna degli attributi
+•	df: visualizza lo spazio libero su disco
+•	diff: mostra le differenze tra due file
+•	diff3: mostra le differenze tra tre file
+•	dig: ricerca DNS
+•	dir: elenca brevemente i contenuti della cartella
+•	dircolors: setup del colore per la lista dei contenuti della cartella
+•	dirname: converte un intero nome del percorso a un semplice percorso
+•	dirs: mostra l'elenco delle cartelle nella memoria della shell
+•	dmesg: stampa i messaggi del kernel e dei driver
+•	du: stima l'uso di spazio di un file
+•	echo: mostra i messaggi sullo schermo
+•	egrep: cerca all'interno di un file o più delle righe uguali all'espressione riportata
+•	eject: espelle il dispositivo rimuovibile
+•	enable: abilità e disabilita i comandi integrati della shell
+•	env: variabili di ambiente
+•	ethtool: impostazioni della scheda Ethernet
+•	eval: valuta diversi comandi e argomenti
+•	exec: esegui un comando
+•	exit: esci dalla shell
+•	expect: automatizza delle applicazioni arbitrarie con accesso da un terminale
+•	expand: converte le tabulazioni in spazi
+•	export: imposta una variabile ambientale
+•	expr: valuta le espressioni
+•	false: non fa nulla e imposta come falso un elemento
+•	fdformat: formattazione di basso livello di un floppy disk
+•	fdisk: tavola di manipolazione delle partizioni per Linux
+•	fg: mette un'azione in primo piano
+•	fgrep: cerca tra i file delle righe uguali a una stringa prefissata
+•	file: determina il tipo del file
+•	find: cerca i file che soddisfano i criteri desiderati
+•	fmt: riformatta un paragrafo di testo
+•	fold: formatta del testo perché sia contenuto in una larghezza specificata
+•	for: espande le parole ed esegue dei comandi
+•	format: formatta dischi o nastri
+•	free: visualizza l'utilizzo della memoria
+•	fsck: controlla l'integrità del file system e lo ripara
+•	ftp: File Transfer Protocol
+•	function: definisce delle funzioni macro
+•	fuser: identifica o elimina il processo che sta accedendo a un file
+•	gawk: trova e sostituisce del testo all'interno dei file
+•	getopts: analizza parametri posizionali
+•	grep: cerca tra i file delle righe che corrispondo a motivi precisi
+•	groups: stampa i nomi del gruppo in cui si trova un utente
+•	gzip: comprimi o decomprimi i file citati
+	H
+•	hash: ricorda l'intero nome del percorso di un file fornito come argomento
+•	head: dà come risultato la prima parte di un file
+•	help: visualizza l'aiuto per un comando integrato
+•	history: cronologia dei comandi
+•	hostname: stampa o imposta un nome per il sistema
+•	id: stampa gli id dell'utente e del gruppo
+•	if: esegue un comando con una condizione
+•	ifconfig: configura un'interfaccia di rete
+•	ifdown: interrompe un'interfaccia di rete
+•	ifup: avvia un'interfaccia di rete
+•	import: scatta una foto della schermata di un server e salva l'immagine su file
+•	install: copia i file e imposta gli attributi
+•	jobs: elenca le attività attive
+•	join: unisce delle linee su un campo comune
+•	kill: interrompe l'esecuzione di un processo
+•	killall: interrompe i processi in ordine alfabetico
+•	less: mostra i risultati una schermata alla volta
+•	let: esegue operazioni aritmetiche sulle variabili della shell
+•	ln: crea dei collegamenti tra i file
+•	local: crea delle variabili
+•	locate: trova dei file
+•	logname: stampa l'attuale nome di login
+•	logout: esci dalla shell di login
+•	look: mostra delle righe che iniziano con una data stringa
+•	lpc: programma di controllo della stampa delle righe
+•	lpr: stampa offline
+•	lprint: stampa un file
+•	lprintd: interrompe una stampa
+•	lprintq: elenca la coda di stampa
+•	lprm: elimina le voci dalla coda di stampa
+•	ls: elenca le informazioni su dei file
+•	lsof: elenca i file aperti
+•	make: ricompila un gruppo di programmi
+•	man: manuale di aiuto
+•	mkdir: crea delle nuove cartelle
+•	mkfifo: crea dei FIFO (chiamati pipes)
+•	mkisofs: crea un filesystem ibrido ISO9660/JOLIET/HFS
+•	mknod: crea un file a blocchi o a caratteri speciali
+•	more: visualizza il risultato una schermata alla volta
+•	mount: monta un file system
+•	mtools: manipola dei file MS-DOS
+•	mtr: diagnostica di rete (traceroute/ping)
+•	mv: sposta o rinomina file o cartelle
+•	mmv: spostamento e rinomina di massa
+•	netstat: informazioni di rete
+•	nice: imposta la priorità di un comando o di un'attività
+•	nl: numera le linee di un file
+•	nohup: esegui un comando immune alle interruzioni
+•	notify-send: invia delle notifiche al desktop
+•	nslookup: chiede i nomi dei server internet in modo interattivo
+•	open: apre un file con la sua applicazione predefinita
+•	op: accesso da operatore
+•	passwd: modifica la password di un utente
+•	paste: unisce delle linee dei file
+•	pathchk: controlla la portabilità del nome del file
+•	ping: esegue il test della connessione di rete
+•	pkill: interrompe l'esecuzione dei processi
+•	popd: ripristina il valore precedente della directory attuale
+•	pr: prepara i file per la stampa
+•	printcap: database della capacità della stampante
+•	printenv: stampa le variabili d'ambiente
+•	printf: formatta e stampa i dati
+•	ps: stato dei processi
+•	pushd: salva e modifica la directory attuale
+•	pwd: stampa la directory di lavoro
+•	quota: mostra l'utilizzo del disco e i limiti
+•	quotacheck: esegue la scansione di un file system per controllare l'utilizzo del disco
+•	quotactl: imposta le quote del disco
+•	ram: informazioni sulla RAM
+•	rcp: copia i file tra due macchine
+•	read: legge una linea da un input standard
+•	readarray: legge da stdin in una variabile array
+•	readonly: segna le variabili o le funzioni come sola lettura
+•	reboot: riavvia il sistema
+•	rename: rinomina i file
+•	renice: altera la priorità dei processi in esecuzione
+•	remsync: sincronizza i file remoti via email
+•	return: esce da una funzione shell
+•	rev: inverte le linee di un file
+•	rm: rimuove dei file
+•	rmdir: rimuove le cartelle
+•	rsync: copia file remota (sincronizza gli alberi dei file)
+•	screen: terminale multiplex, esegue le shell remote via ssh
+•	scp: copia sicura (copia file remota)
+•	sdiff: unisce due file in modo interattivo
+•	sed: editor dei flussi
+•	select: accetta l'input da tastiera
+•	seq: stampa delle sequenze numeriche
+•	set: manipola le variabili e le funzioni della shell
+•	sftp: Secure File Transfer Program
+•	shift: sposta i parametri posizionali
+•	shopt: opzioni della shell
+•	shutdown: spegne o riavvia Linux
+•	sleep: ritarda per un tempo specifico
+•	slocate: trova i file
+•	sort: ordina i file di testo
+•	source: esegue i comandi da un file indicato
+•	split: divide un file in parti di dimensioni fisse
+•	ssh: Client Secure Shell (programma di accesso remoto)
+•	strace: traccia le chiamate e i segnali di sistema
+•	su: sostituisce l'identità dell'utente
+•	sudo: esegue un comando come altro utente
+•	sum: stampa un checksum per un file
+•	suspend: sospendi l'esecuzione di questa shell
+•	symlink: crea un nuovo nome per un file
+•	sync: sincronizza i dati su disco con la memoria
+•	tail: dà come risultato l'ultima parte di un file
+•	tar: archivio dei nastri
+•	tee: reindirizza il risultato su più file
+•	test: valuta un'espressione condizionale
+•	time: misura il tempo di esecuzione dei programmi
+•	times: tempi dell'utente e del sistema
+•	touch: modifica i timestamp dei file
+•	top: elenca i processi in esecuzione sul sistema
+•	traceroute: rintraccia il percorso verso l'host
+•	trap: esegue un comando quando viene impostato un segnale
+•	tr: trasla, comprime o elimina dei caratteri
+•	true: non fa nulla e imposta un elemento come vero
+•	tsort: ordinamento topologico
+•	tty: stampa il nome del file del terminale su stdin
+•	type: descrive un comando
+•	ulimit: limite le risorse degli utenti
+•	umask: maschera di creazione file per gli utenti
+•	umount: smonta un dispositivo
+•	unalias: rimuovere un alias
+•	uname: stampa le informazioni di sistema
+•	unexpand: converte gli spazi in tabulazioni
+•	uniq: legge un file di testo e scarta le linee identiche
+•	units: converte le unità da una scala all'altra
+•	unset: rimuovi i nomi delle variabili o delle funzioni
+•	unshar: decomprime gli script degli archivi della shell
+•	until: esegue i comandi (fino a un errore)
+•	useradd: crea un nuovo account utente
+•	usermod: modifica l'account utente
+•	users: elenca gli utenti connessi al momento
+•	uuencode: codifica un file binario
+•	uudecode: decodifica un file creato con unicode
+•	v: elenca i contenuti della cartella in modo completo
+•	vdir: elenca i contenuti della cartella in modo completo
+•	vi: editor di testo
+•	vmstat: riporta le statistiche della memoria virtuale
+•	watch: esegue o mostra un programma periodicamente
+•	wc: stampa conteggio dei byte, delle parole e delle righe
+•	whereis: cerca nel percorso dell'utente, tra le pagine del manuale e in un file sorgente un programma
+•	which: cerca il percorso dell'utente per un file programma
+•	while: esegue dei comandi
+•	who: stampa tutti i nomi utenti connessi al momento
+•	whoami: stampa l'id e il nome dell'utente attuale
+•	Wget: recupera della pagine web o dei file via HTTP, HTTPS o FTP
+•	write: invia un messaggio a un altro utente
+•	xargs: esegue un utilità, comunicando un elenco di argomenti strutturato
+•	xdg-open: apre un file o un URL con l'applicazione predefinita dall'utente
+•	yes: stampa una stringa fino all'interruzione
+•	.: esegue uno script nella shell attuale ### ti permette di rimarcare o commentare senza utilizzare il terminale.
+
+Prompt dei comandi di Windows
+
+bitsadmin	crea e controlla i download e gli upload.	 10/8/7/Vista
+break	interrompe il controllo su DOS tramite CTRL + C per fermare i processi nel vecchio sistema operativo. Il comando è ancora disponibile su Windows per motivi di compatibilità.	qualsiasi versione Win/DOS
+call	richiama un file batch all’interno di un altro file batch. Il comando non funziona se lo immettete direttamente nel CMD invece che in un file batch.	qualsiasi versione Win/DOS
+cd	mostra la cartella corrente e vi permette di spostarvi nelle altre cartelle. Con il parametro /D più indicazione di drive e percorso potete anche spostarvi in un altro drive. Con cd.. passate alla directory superiore (ha quindi la stessa funzione del comando chdir).	qualsiasi versione Win/DOS
+chcp	cambia la pagina del codice corrente (tabella codici) o mostra il numero della pagina attuale del codice.	qualsiasi versione Win/DOS
+chdir	mostra la cartella corrente e vi permette di spostarvi nelle altre cartelle. Con il parametro /D più indicazione di drive e percorso potete anche spostarvi in un altro drive. Con chdir.. passate alla directory superiore (ha quindi la stessa funzione del comando cd).	qualsiasi versione Win/DOS
+choice	crea una lista di selezione: un tipico esempio è la selezione di Sì (S) o No (N), che create con /C SN. Con il parametro /M potete aggiungere un messaggio di spiegazione per l’utente.	qualsiasi versione Win (eccetto XP)/DOS
+clip	inserisce il risultato di un comando nella cache. Così potete ad esempio copiare nella cache la struttura della directory (dir / clip) o il contenuto di un file (clip < nomefile).	10/8/7/Vista
+cls	cancella il contenuto sullo schermo.	qualsiasi versione Win/DOS
+cmd	avvia CMD.EXE.	10/8/7/Vista/XP
+color	cambia il colore dello sfondo (primo valore) e del testo (secondo valore) del prompt dei comandi. I colori sono compresi tra 0 (nero) e F (bianco).	10/8/7/Vista/XP
+command	avvia CMD.COM.	32 bit/DOS
+date	mostra la data corrente e permette di modificarla. Con il parametro /T viene mostrata solo la data senza possibilità di modifica.	qualsiasi versione Win/DOS
+debug	avvia Debug, un programma con cui si possono testare e cambiare i programmi nel prompt dei comandi.	32 bit/DOS
+dir	mostra tutte le cartelle e i file presenti nella directory corrente. Si può limitare l’output tramite attributi (/A), semplificare la lista (/B) o farsi mostrare tutte le sottocartelle e i file contenuti (/S).	qualsiasi versione Win/DOS
+doskey	crea macro, richiama comandi ed elabora l’immissione dei comandi.	qualsiasi versione Win/DOS
+dosshell	apre la shell di DOS, uno strumento grafico per la gestione dei file. Su Windows la shell di DOS è stata sostituita da Esplora risorse.	95/DOS
+echo	mostra un messaggio e viene utilizzato soprattutto all’interno di script e file batch.	qualsiasi versione Win/DOS
+edit	avvia l’editor di MS-DOS con cui si possono creare file di testo.	32 bit/DOS
+edlin	crea ed elabora i file di testo nel prompt dei comandi.	32 bit/DOS
+exit	chiude CMD.EXE o CMD.COM.	qualsiasi versione Win/DOS
+fasthelp	mostra informazioni utili sui comandi.	DOS
+fastopen	scrive la posizione di un programma in una determinata lista che si trova nella memoria e che dovrebbe accelerare l’avvio dei programmi.	32 bit/DOS
+find	cerca uno o più file in una determinata sequenza di caratteri. Se volete solo sapere quante volte ricorre una parola o una frase, utilizzate il parametro /C. Aggiungendo /I il comando ignora le maiuscole e le minuscole durante la ricerca.	qualsiasi versione Win/DOS
+findstr	trova sequenze di caratteri in uno o più file. Rispetto al comando find avete a disposizione più opzioni, così potete cercare file che contengono diversi termini o una sequenza di parole esatte con /C.	10/8/7/Vista/XP
+forcedos	avvia un programma nel sistema parziale di MS-DOS, nel caso in cui non venga riconosciuto direttamente da Windows XP come programma DOS.	XP (32 bit)
+graftabl	attiva la possibilità di utilizzare dei caratteri avanzati di una determinata pagina di codice nella modalità grafica.	32 bit/DOS
+graphics	avvia un programma con cui possono essere stampate le grafiche.	32 bit/DOS
+help	mostra un testo di aiuto per un determinato comando (in alternativa si può anche utilizzare il comando /?).	qualsiasi versione Win/DOS
+kb16	modifica l’impostazione del paese della tastiera per i programmi DOS (il comando è ancora disponibile su Windows per motivi di compatibilità. Sostituisce il comando precedente keyb).	32 bit
+keyb	modifica l’impostazione del paese della tastiera per i programmi DOS (il comando è ancora disponibile su Windows per motivi di compatibilità. Nelle versioni più recenti di Windows è stato sostituito da kb16).	98/95/DOS
+logoff	disconnette l’utente da Windows. Inoltre in questo modo potete terminare le sessioni sul server.	10/8/7/Vista/XP
+lpq	mostra lo stato della coda di attesa della stampante per computer che utilizzano un Line Printer Daemon (LPD). Per utilizzare il comando su Windows 10, 8, 7 o Vista dovete prima di tutto attivare il servizio LPD Print e il monitor porta LPR.	qualsiasi versione Win
+lpr	invia un file a un computer che utilizza Line Printer Daemon (LPD). Per utilizzare il comando su Windows 10, 8, 7 o Vista dovete prima di tutto attivare il servizio LPD Print e il monitor porta LPR.	qualsiasi versione Win
+md	crea una nuova cartella nel percorso indicato. Se le cartelle nel percorso non dovessero esistere, md le crea automaticamente (in alternativa si può anche utilizzare il comando mkdir).	qualsiasi versione Win/DOS
+mkdir	crea una nuova cartella nel percorso indicato. Se le cartelle nel percorso non dovessero esistere, mkdir le crea automaticamente (in alternativa si può anche utilizzare il comando md).	qualsiasi versione Win/DOS
+more	restituisce il contenuto di un file diviso per pagine (ad esempio di un file di testo). Inoltre con questo comando potete anche suddividere per pagine l’output di un altro comando.	qualsiasi versione Win/DOS
+msg	invia un messaggio a un altro utente. Potete scrivere il nome utente nel comando o creare file in cui salvare il nome utente, dopodiché potete integrare i file nel comando con @nomefile.	10/8/7/Vista/XP
+nlsfunc	mette a disposizione informazioni specifiche per i paesi per il supporto delle lingue.	32 bit/DOS
+ntbackup	esegue i backup direttamente dalla riga di comando o come parte di script o file batch.	XP
+path	stabilisce e mostra il percorso per la ricerca di file eseguibili.	qualsiasi versione Win/DOS
+pause	mette in pausa l’esecuzione di file batch e di script. In seguito con un messaggio viene richiesto all’utente di proseguire premendo un tasto.	qualsiasi versione Win/DOS
+popd	si sposta nella cartella che è stata salvata con il comando pushd. Il comando fa parte soprattutto di file batch e script.	10/8/7/Vista
+print	stampa un file di testo. Si deve però specificare con quale dispositivo si vuole stampare.	qualsiasi versione Win/DOS
+prompt	modifica la visualizzazione del prompt dei comandi.	qualsiasi versione Win/DOS
+pushd	salva un determinato percorso in uno script o in un file batch. Con popd ci si può spostare in questa directory.	10/8/7/Vista/XP
+qbasic	avvia Qbasic, un ambiente di programmazione basato sul linguaggio di programmazione BASIC.	98/95/DOS
+rd	elimina una cartella, in cui non sono presenti file, neanche nascosti. Con il parametro /S si possono cancellare intere strutture ad albero di cartelle (in alternativa si può utilizzare anche il comando rmdir).	qualsiasi versione Win/DOS
+rem	scrive commenti nei file batch e negli script a cui non bisogna prestare attenzione durante l’esecuzione.	qualsiasi versione Win/DOS
+rmdir	elimina una cartella in cui non sono presenti file, neanche nascosti. Con il parametro /S si possono cancellare intere strutture ad albero di cartelle (in alternativa si può utilizzare anche il comando rd).	qualsiasi versione Win/DOS
+runas	permette a un utente di eseguire comandi con i permessi di un altro utente. Così si possono ad esempio eseguire comandi come amministratore da un normale account a condizione che si conosca la password.	10/8/7/Vista/XP
+scandisk	avvia Microsoft ScanDisk, un programma che controlla la presenza di errori sui supporti dati.	98/95/DOS
+schtasks	stabilisce l’esecuzione di determinati programmi e comandi in un determinato momento. Potete creare, cancellare, modificare e farvi mostrare tutti i compiti pianificati.	10/8/7/Vista/XP
+set	mostra le variabili di ambiente di CMD.EXE e permette di configurarle.	qualsiasi versione Win/DOS
+shift	sposta variabili all’interno di file batch e script.	qualsiasi versione Win/DOS
+shutdown	spegne il computer (/s), lo riavvia (/r) o disconnette l’utente (/l). Se inserite come prima opzione il parametro /i, vi viene mostrata un’interfaccia grafica.	10/8/7/Vista/XP
+sort	estrapola dati (da un file o da un comando) e li restituisce ordinati, direttamente nella riga di comando, in un nuovo file o in altro modo.	qualsiasi versione Win/DOS
+start	apre una nuova finestra del prompt dei comandi, dove può essere avviato uno specifico programma o un comando.	qualsiasi versione Win
+subst	assegna a un percorso una lettera di un drive e crea così un drive virtuale.	qualsiasi versione Win/DOS
+taskkill	termina uno o più task indicando l’ID del processo (PID) o il nome visualizzato.	10/8/7/Vista
+tasklist	elenca tutti i processi in corso anche sui computer remoti, se richiesto. Anche in questo caso si deve inserire l’ID del processo che serve ad esempio per il comando taskkill.	10/8/7/Vista/XP
+time	mostra l’ora corrente e permette di modificarla. Se si inserisce il parametro /T, la riga di comando mostra solo l’ora e non dà direttamente la possibilità di modificarla.	qualsiasi versione Win/DOS
+timeout	ferma un processo per un tempo determinato. Il comando viene utilizzato nei file batch e negli script. Se si usa il parametro /NOBREAK, il comando ignora tutte le immissioni.	10/8/7/Vista
+title	cambia il titolo del prompt dei comandi. Qui sono ammessi gli spazi, ma non tutti i caratteri speciali, perché ad esempio lo slash viene interpretato come introduzione per un parametro.	qualsiasi versione Win/DOS
+tree	rappresenta graficamente la struttura di directory di un drive o di un percorso. Con il parametro /F vengono anche elencati tutti i file presenti nelle cartelle. /A fa in modo che vengano utilizzati solo i caratteri ASCII per la rappresentazione grafica. Il comando tiene conto di tutte le sottocartelle a partire dal percorso inserito. Se non inserite nessun percorso, come punto di partenza viene utilizzata la cartella corrente.	qualsiasi versione Win/DOS
+type	mostra il contenuto di un file di testo.	qualsiasi versione Win/DOS
+tzutil	mostra il fuso orario corrente impostato (/g) o lo modifica (/s). Il parametro /l aiuta a individuare il giusto fuso orario.	10/8/7
+ver	mostra il numero della versione corrente di Windows o MS-DOS.
+
+	qualsiasi versione Win/DOS
+append	stabilisce il percorso in cui si devono cercare i file.	32 bit/DOS
+assoc	modifica il programma che è collegato con una determinata estensione di un file.	10/8/7/Vista/XP
+attrib	modifica gli attributi di determinati file. Con il parametro +R proteggete ad esempio un file dalle modifiche.	qualsiasi versione Win/DOS
+cipher	mostra e cambia lo stato di crittografia dei file e delle cartelle sulle partizioni NTFS.	10/8/7/Vista/XP
+comp	compara i contenuti di due file o di due set di file. Il risultato può essere presentato sotto forma di valore decimale (/D) o con caratteri ASCII (/A).	10/8/7/Vista/XP
+compact	mostra e cambia lo stato di compressione dei file e delle cartelle sulle partizioni NTFS.	10/8/7/Vista/XP
+copy	copia uno o più file in un altro posto. Inoltre è possibile unire più file in uno. Potete utilizzare l’asterisco come carattere jolly.	qualsiasi versione Win/DOS
+cscript	esegue script tramite Microsoft Script Host. Con l’opzione /D attivate anche il processo di debug.	qualsiasi versione Win/DOS
+del	cancella uno o più file. È possibile eliminare tutti i file presenti nelle sottocartelle con il parametro /S. I file protetti da scrittura si possono cancellare con /F. In alternativa si può utilizzare anche il comando erase.	qualsiasi versione Win/DOS
+deltree	elimina una cartella così come tutte le sottocartelle e i file in essa contenuti.	98/95/DOS
+diantz	comprime i file senza perdita di qualità nel formato CAB. Il comando ha la stessa funzione di makecab.	7/Vista/XP
+diskcomp	compara il contenuto di due dischetti.	qualsiasi versione Win (eccetto 10)/DOS
+diskcopy	copia il contenuto di un dischetto su un altro.	qualsiasi versione (eccetto 10)/DOS
+endlocal	termina la validità delle modifiche nei file batch o negli script. Dopo il comando le modifiche si riferiscono di nuovo all’intero sistema. Con setlocal si avvia la localizzazione.	10/8/7/Vista/XP
+erase	ha la stessa funzione di del.	qualsiasi versione Win/DOS
+exe2bin	converte un file EXE in uno BIN.	32 bit
+expand	estrae file e cartelle che si trovano nei file CAB.	qualsiasi versione Win (eccetto XP a 64 bit)/DOS
+extrac32	estrae file e cartelle che si trovano nei file CAB. Il programma fa parte di Internet Explorer, ma può essere usato anche nel prompt dei comandi.	qualsiasi versione Win
+extract	estrae file e cartelle che si trovano nei file CAB. Le versioni più recenti di Windows utilizzano expand.	98/95
+fc	compara due file personali o due set di file tra di loro e mostra le differenze.	qualsiasi versione Win/DOS
+for	stabilisce che deve essere eseguito un comando determinato per un singolo file contenuto in un set. Il comando viene utilizzato soprattutto nei file batch e negli script.	qualsiasi versione Win/DOS
+forfiles	seleziona uno o più file ed esegue un comando che si riferisce ai file. Viene utilizzato soprattutto per file batch e script.	10/8/7/Vista
+ftype	determina un programma con cui si deve aprire uno specifico tipo di file.	10/8/7/Vista/XP
+goto	fa saltare l’esecuzione di un programma batch in una determinata riga.	qualsiasi versione Win/DOS
+if	rappresenta un’istruzione condizionata e come tale esegue queste espressioni all’interno di file batch solo in presenza di determinate condizioni. Può essere ampliato tramite not, quando non possono essere eseguiti i comandi per determinate condizioni.	qualsiasi versione Win/DOS
+makecab	comprime i file senza perdita di qualità nel formato CAB. In alternativa si può utilizzare anche il comando diantz.	10/8/7/Vista/XP
+mklink	crea un collegamento simbolico a un file. Con /D si possono creare anche i collegamenti alle directory. Create un collegamento fisico al posto di uno simbolico con /H.	10/8/7/Vista
+move	sposta uno o più file da una cartella a un’altra. Inoltre il comando può cambiare il nome delle cartelle. Di solito il comando sovrascrive i file con lo stesso nome al momento di spostare i file nella destinazione. Per impedirlo utilizzate il parametro /-Y.	qualsiasi versione Win/DOS
+openfiles	mostra e divide i file e le cartelle pubbliche di un sistema.	10/8/7/Vista/XP
+recover	ripristina file leggibili che si trovano su un supporto dati difettoso.	10/8/7/Vista/XP
+ren	cambia il nome di un determinato file. Non si possono cambiare la cartella e il drive. In alternativa si può anche utilizzare il comando rename.	qualsiasi versione Win/DOS
+rename	ha la stessa funzione di ren.	qualsiasi versione Win/DOS
+replace	sostituisce uno o più file selezionati con uno o più file. Con /S vengono sostituiti anche i file nelle sottocartelle. Servendosi dell’aggiunta /U, i file vengono sostituiti se l’altra versione è più recente. Il parametro /A consente agli utenti di aggiungere nello stesso momento nuovi file nella cartella di destinazione. Questo parametro non è compatibile con /S e /U.	qualsiasi versione Win/DOS
+robocopy	consente la cosiddetta hard copy dei file. Si tratta di una versione avanzata di copy e xcopy. Così con robocopy è possibile eseguire un trasferimento dati, anche se ci sono interruzioni nella rete. Ci sono in totale 72 parametri con i quali si può regolare questo comando.	10/8/7/Vista
+rsm	gestisce i contenuti multimediali sui supporti rimovibili. Viene utilizzato nei file batch e negli script per supportare i programmi che non utilizzano la Removable Storage API.	Vista/XP
+setlocal	limita la validità delle modifiche nei file batch o negli script. Dopo il comando le modifiche si riferiscono solo a questi file. Con endlocal si avvia la localizzazione.	10/8/7/Vista/XP
+share	installa il file sharing e il file locking.	32 bit/DOS
+sxstrace	avvia WinSxs Tracing Utility, uno strumento di diagnostica per la programmazione.	10/8/7/Vista
+takeown	ripristina i permessi di accesso degli amministratori su un file, andati persi con la nuova assegnazione di un utente.	10/8/7/Vista
+undelete	annulla il comando di eliminazione di un file.	DOS
+verify	se attivo, verifica se i file sono stati scritti correttamente su un supporto dati. Di default la verifica è disattivata.	qualsiasi versione Win/DOS
+where	trova i file che corrispondono a un determinato schema di ricerca. All’interno dello schema si possono utilizzare i segnaposto * e ?.	10/8/7/Vista
+xcopy	copia i file e le strutture complete delle directory. A questo scopo il comando offre innumerevoli opzioni aggiuntive. Così si può ad esempio stabilire che vengano copiati solo quei file che precedono una determinata data (/D) o che vengano sovrascritti anche i file protetti da scrittura (/R).
+at	fa avviare i comandi e i programmi a un determinato orario. Con il parametro /every:data[,…] potete anche stabilire appuntamenti regolari.	10/8/7/Vista/XP
+auditpol	indica le linee guida di controllo correnti.	10/8/7/Vista
+backup	crea backup di file che possono essere ripristinati con restore (sostituito da msbackup).	DOS
+bcdboot	crea e ripara i file di avvio.	10/8/7
+bcdedit	permette agli utenti di apportare modifiche alla memoria dei dati della configurazione di avvio. Il comando è la versione più recente di bootcfg.	10/8/7/Vista
+bdehdcfg	prepara un disco rigido per BitLocker Drive Encryption.	10/8/7
+bootcfg	crea, modifica o mostra il contenuto di boot.ini. A partire da Windows 7 è ancora presente su CMD ma ha perso la sua funzione, visto che questo file non viene più utilizzato per le opzioni di avvio. Al suo posto si dovrebbe usare bcdedit.	10/8/7/Vista/XP
+bootsect	adatta il codice Master Boot per renderlo compatibile con il Windows Boot Manager o l’NT Loader. Su Windows 7 e Vista può essere avviato solo tramite il ripristino di sistema.	10/8/7/Vista
+cacls	modifica e mostra la lista di controllo degli accessi (abbreviata in ACL, “Access Control List”) che stabilisce i permessi di accesso. Tuttavia è un comando datato che è stato sostituito nelle versioni di Windows più recenti con icacls.	10/8/7/Vista/XP
+chkdsk	verifica e ripara (con il parametro /R) un supporto dati.	qualsiasi versione Win/DOS
+chkntfs	modifica o mostra la verifica dei supporti dati all’avvio.	10/8/7/Vista/XP
+cmdkey	può mostrare (/list), creare (/add) e cancellare (/delete) le informazioni di login.	10/8/7/Vista
+convert	converte le partizioni FAT/FAT32 in NTFS.	10/8/7/Vista/XP
+ctty	modifica l’input e l’output standard per il sistema.	98/95/DOS
+dblspace	crea o configura drive compressi. Una versione più recente del comando si chiama drvspace.	98/95/DOS
+defrag	deframmenta tutti o solo determinati drive. Utilizzate /U per monitorare i progressi. Per ricevere dopo la deframmentazione una statistica di valutazione, utilizzate il parametro /V.	qualsiasi versione Win/DOS
+diskpart	gestisce, crea e cancella le partizioni sui dischi rigidi.	10/8/7/Vista/XP
+diskperf	consente agli utenti di controllare da remoto il Disk Performance Counter.	10/8/7/Vista
+diskraid	gestisce i sistemi RAID.	10/8/7/Vista
+dism	controlla e aggiunge le immagini di Windows.	10/8/7
+dispdiag	crea un file nella cartella corrente in cui si trovano le informazioni sul vostro schermo.	10/8/7/Vista
+dosx	avvia DOS Protected Mode Interface, in cui sono previsti più di 640 KB di memoria per i programmi MS-DOS. È ancora disponibile solo per supportare programmi DOS più datati.	32 bit
+driverquery	crea una lista con tutti i driver installati.	10/8/7/Vista/XP
+drvspace	crea o configura tutti i drive compressi. Una versione più datata del comando si chiama dblspace.	98/95/DOS
+emm386	mette a disposizione di DOS più di 640 KB di memoria.	98/95/DOS
+esentutl	gestisce i database all’interno dell’Extensible Storage Engine.	10/8/7/Vista/XP
+eventcreate	crea un record (ID e messaggio) in un protocollo eventi.	10/8/7/Vista/XP
+eventtriggers	configura e mostra il trigger per gli eventi.	XP
+fdisk	crea, cancella e gestisce le partizioni sul disco rigido. Nelle versioni di Windows più recenti si usa diskpart.	98/95/DOS
+fltmc	consente agli utenti di mostrare e gestire i driver di filtro.	10/8/7/Vista/XP
+fondue	installa feature di Windows aggiuntive. Il comando è l’abbreviazione per lo strumento di base Features on Demand User Experience Tool.	10/8
+format	formatta un drive sul file system indicato dall‘utente.	qualsiasi versione Win/DOS
+fsutil	dispone di moltissime funzioni che riguardano i file di sistema, come la rimozione di drive.	10/8/7/Vista/XP
+hwrcomp	compila i dizionari creati manualmente per il riconoscimento della scrittura.	10/8/7
+hwrreg	installa un dizionario compilato per il riconoscimento della scrittura.	10/8/7
+icacls	modifica e mostra la lista di controllo degli accessi che stabilisce i permessi di accesso. Una versione datata di questo comando è cacls.	10/8/7/Vista
+ktmutil	avvia il kernel Transaction Manager.	10/8/7/Vista
+label	modifica o cancella la denominazione di un drive.	qualsiasi versione Win/DOS
+lh	carica un determinato programma nell’Upper Memory Block (UMB); ha la stessa funzione di loadhigh.	98/95/DOS
+licensingdiag	genera un file XML e CAB in cui sono contenute le informazioni sulla licenza di Windows.	10/8
+loadfix	assicura che venga caricato ed eseguito un programma oltre i primi 64 KB di memoria.	32 bit/DOS
+loadhigh	ha la stessa funzione di lh.	98/95/DOS
+lock	blocca un drive tramite il quale solo un programma selezionato preliminarmente dall’utente può accedere direttamente.	98/95
+lodctr	aggiorna tutti i valori del registro di sistema che riguardano i contatori di performance.	qualsiasi versione Win
+logman	crea e gestisce sessioni di Traccia eventi e di log di performance.	10/8/7/Vista/XP
+manage-bde	configura la crittografia del drive con BitLocker. Con –on cifrate un drive. Con –off lo decifrate nuovamente e terminate così anche la protezione con BitLocker.	10/8/7
+mem	mostra le informazioni sulla memoria e segnala quali programmi vi sono già caricati.	32 bit/DOS
+memmaker	ottimizza la memoria.	98/95/DOS
+mode	configura i dispositivi di sistema, soprattutto sulla porta COM o LPT.	qualsiasi versione Win/DOS
+mofcomp	analizza i file nel Managed Object Format (MOF) e aggiunge le classi e le istanze al repository WMI.	qualsiasi versione Win
+mountvol	crea, cancella e mostra i punti di montaggio per i drive.	10/8/7/Vista/XP
+msav	avvia Microsoft Antivirus.	DOS
+msbackup	avvia Microsoft Backup (sostituisce backup e restore).	DOS
+mscdex	carica il supporto CD-ROM per MS-DOS.	98/95/DOS
+msd	avvia il programma Microsoft Diagnostics con cui si possono visualizzare le informazioni di sistema.	DOS
+msiexec	avvia Windows Installer con cui si può installare e configurare Windows.	10/8/7/Vista/XP
+muiunattend	avvia un processo di setup automatizzato per la Multilingual User Interface (MUI).	10/8/7/Vista
+netcfg	installa il sistema operativo minimizzato Microsoft Windows PE.	10/8/7/Vista
+ocsetup	installa funzioni di Windows aggiuntive.	8/7/Vista
+pentnt	riconosce gli errori del numero in virgola mobile nei chip di Pentium, ne avvia l’emulazione e disattiva l’hardware.	XP
+pkgmgr	installa, disinstalla e configura pacchetti e funzioni per Windows.	10/8/7/Vista
+pnpunattend	automatizza l’installazione dei driver dei dispositivi.	10
+pnputil	installa i dispositivi plug-and-play dal prompt dei comandi.	10/8/7/Vista
+power	utilizza lo stato IDLE di un processore per risparmiare sull’uso delle risorse.	98/95/DOS
+powercfg	permette all’utente di modificare le opzioni energetiche del computer e controlla i piani di risparmio energetico.	10/8/7/Vista/XP
+pwlauncher	configura le opzioni di avvio per Windows To Go, di modo che si possa fare il boot di Windows da una pendrive USB.	10/8
+qprocess	fornisce informazioni sui processi in corso.	10/8/7/Vista
+query	mostra lo stato di un determinato servizio.	10/8/7/Vista
+quser	fornisce informazioni sugli utenti loggati al momento.	10/8/7/Vista
+reagentc	configura l’ambiente di ripristino di Windows tramite il quale si può riparare l’installazione del sistema operativo.	10/8/7
+recimg	crea un’immagine di Windows personalizzata per ripristinare il sistema.	8
+reg	gestisce il registro di sistema dal prompt dei comandi. Così gli utenti possono creare nuove chiavi (reg add) e cancellarle (reg delete).	10/8/7/Vista/XP
+regini	modifica le autorizzazioni per il registro di sistema.	10/8/7/Vista/XP
+register-cimprovider	registra il Common Information Model (CIM) su Windows.	10/8
+regsvr32	registra un file DLL nel registro di sistema.	10/8/7/Vista/XP
+relog	crea nuovi protocolli di verifica delle prestazioni dai dati già presenti nei protocolli.	10/8/7/Vista/XP
+repair-bde	ripara e decifra i drive difettosi che sono stati crittografati con BitLocker. I file dovrebbero essere salvati su un drive sostitutivo.	10/8/7
+reset	resetta una sessione. In alternativa si può utilizzare anche il comando rwinsta.	10/8/7/Vista/XP
+restore	ripristina i backup che sono stati creati tramite il comando backup (sostituito da msbackup).	DOS
+rwinsta	ha la stessa funzione di reset.	10/8/7/Vista/XP
+sc	gestisce i servizi stabilendo una connessione con il Service Controller.	10/8/7/Vista/XP
+scanreg	ripara il registro di sistema e consente di crearne un backup.	98/95
+sdbinst	applica database personalizzati (SDB).	10/8/7/Vista/XP
+secedit	analizza le impostazioni per la sicurezza comparando la configurazione corrente attuale con i template. Grazie a questo comando si possono anche configurare, importare ed esportare le impostazioni.	10/8/7/Vista/XP
+setver	stabilisce il numero di versione di MS-DOS che viene dato a un programma, anche se non corrisponde alla versione effettiva.	32 bit/DOS
+setx	crea o modifica le variabili di ambiente nell’ambiente di sistema o in quello utente.	10/8/7/Vista
+sfc	verifica tutti i file di sistema importanti e protetti. Le versioni errate vengono anche sostituite da quelle corrette.	10/8/7/Vista/XP
+smartdrv	avvia e gestisce il programma di cache del disco rigido SMARTDrive.	98/95/DOS
+sys	copia i file di sistema di MS-DOS e l’interprete dei comandi su un altro drive, che così si può avviare.	98/95/DOS
+systeminfo	mostra le informazioni sull’installazione di Windows comprensive di tutti i service pack installati. Le informazioni si possono ottenere sia dal sistema locale che dal computer remoto.	10/8/7/Vista/XP
+tpmvscmgr	crea e cancella le smart card virtuali TPM, cioè delle smart card virtuali che sono criptate sulla base di moduli Trusted Platform.	10/8
+tracerpt	modifica file di log o dati in tempo reale che sorgono durante lo svolgimento di programmi per il computer.	10/8/7/Vista/XP
+typeperf	mostra i dati della verifica delle prestazioni o li scrive in un file.	10/8/7/Vista/XP
+unformat	ripristina la formattazione di un drive con il comando format.	DOS
+unlock	sblocca un drive che era stato bloccato con lock.	98/95
+unlodctr	cancella sia il nome sia le spiegazioni per la verifica delle prestazioni, ampliabili nel registro di sistema di Windows.	10/8/7/Vista/XP
+vaultcmd	crea, cancella e mostra le informazioni di login memorizzate.	10/8/7
+vol	mostra la denominazione e il numero di serie di un drive.	qualsiasi versione Win/DOS
+vsafe	avvia il software antivirus VSafe.	DOS
+vssadmin	gestisce le shadow copy dei volumi con cui si possono salvare diverse versioni (snapshot) dei drive.	10/8/7/Vista/XP
+wbadmin	crea backup del sistema operativo e fornisce informazioni al riguardo.	10/8/7/Vista
+wevtutil	gestisce i protocolli eventi e i file del protocollo eventi.	10/8/7/Vista
+whoami	fornisce indicazioni sull’utente corrente. Con il parametro /GROUP si ottengono anche informazioni sugli appartenenti al gruppo.	10/8/7/Vista
+winmgmt	gestisce repository WMI, così è ad esempio possibile creare backup (/backup) con questo comando.	qualsiasi versione Win
+winsat	valuta diversi fattori del sistema, come la performance del processore o le competenze grafiche.	10/8/7/Vista
+wmic	avvia gli strumenti di gestione di Windows nel prompt dei comandi. In questo modo si possono modificare innumerevoli impostazioni di Windows, sia in locale che da computer remoto.	10/8/7/Vista/XP
+xwizard	registra i dati Windows sotto forma di file XML.	10/8/7
+arp	mostra e modifica i record che si trovano nella cache del protocollo Address Resolution.	qualsiasi versione Win
+atmadm	mostra informazioni sulla modalità di trasferimento asincrono (Asynchronous Transfer Mode, ATM).	XP
+certreq	gestisce e crea i requisiti del registro di certificato presso gli enti di certificazione.	10/8/7/Vista
+certutil	gestisce i servizi relativi all’autenticazione del certificato.	10/8/7/Vista
+change	modifica le impostazioni di un server usato come terminale e viene utilizzato con i parametri logon, port o user. Sostituisce i comandi chglogon, chgport e chgusr.	10/8/7/Vista
+checknetisolation	verifica la connettività delle app dal Windows Store.	10/8
+chglogon	attiva, disattiva o sincronizza i login nelle sessioni del terminale.	10/8/7/Vista
+chgport	mostra o modifica l’assegnazione delle porte COM nei terminali per la compatibilità con DOS.	10/8/7/Vista
+chgusr	modifica la modalità di installazione su un terminale.	10/8/7/Vista
+cmstp	installa o disinstalla i profili per il gestore delle connessioni.	10/8/7/Vista/XP
+djoin	crea un nuovo account del computer nell’Active Directory Domain Services (AD DS).	10/8/7/Vista
+finger	fornisce informazioni sugli utenti dei dispositivi remoti che utilizzano il servizio finger.	10/8/7/Vista/XP
+ftp	trasferisce dati a un server FTP o da questo a un PC. Il comando vi offre altre opzioni: così potete ad esempio attivare il processo di debug con -d.	qualsiasi versione Win/DOS
+getmac	mostra l’indirizzo MAC di tutti gli adattatori di rete. Stabilite il formato di output (Table, List, CSV) con /FO. Con /S potete applicare il comando anche ai sistemi remoti.	10/8/7/Vista/XP
+gpresult	mostra informazioni sulla Group Policy.	10/8/7/Vista/XP
+gpupdate	aggiorna le informazioni sulla Group Policy.	10/8/7/Vista/XP
+hostname	restituisce il nome dell’host corrente.	10/8/7/Vista/XP
+interlnk	collega due computer tramite connessione seriale o parallela per condividere file o stampanti.	DOS
+intersvr	avvia un server Interlnk e trasferisce i dati da un computer a un altro tramite connessione seriale o parallela.	DOS
+ipconfig	fornisce informazioni sull’IP di ogni adattatore di rete utilizzato. Inoltre si possono condividere gli indirizzi (/release) o aggiornarli (/renew). Invece con /flushdns si può svuotare la cache DNS.	qualsiasi versione Win/DOS
+ipxroute	modifica e mostra le informazioni sulle tabelle di routing IPX.	XP
+irftp	trasferisce i file tramite connessione a infrarossi, se disponibile.	10/8/7/Vista
+iscsicli	gestisce iSCSI, dove sono possibili connessioni tramite il protocollo SCSI.	10/8/7/Vista
+klist	mostra tutti i ticket con cui ci si è autenticati con il servizio Kerberos. Inoltre consente di cancellare i ticket (purge).	10/8/7
+ksetup	configura una connessione al server Kerberos.	10/8/7
+mount	attiva la condivisione della rete sul Network File System. Per utilizzare il comando devono essere attivati prima di tutto i servizi NFS.	7/Vista
+mrinfo	fornisce informazioni sul router.	10/8/7/Vista/XP
+nbtstat	mostra statistiche e informazioni sulle connessioni TCP/IP sui computer remoti.	10
+net	configura e mostra le impostazioni di rete.	qualsiasi versione Win
+net1	configura e mostra le impostazioni di rete. Si consiglia però di utilizzare il comando net. Il comando net1 è stato pensato solo come soluzione temporanea per il problema dello Y2K.	10/8/7/Vista/XP
+netsh	avvia la shell di rete con cui si possono prendere le impostazioni di rete per i computer locali e remoti.	10/8/7/Vista/XP
+netstat	mostra statistiche e informazioni sulle connessioni TCP/IP sui computer locali.	qualsiasi versione Win
+nfsadmin	gestisce i server e i client NFS. Per utilizzare il comando devono essere attivati prima di tutto i servizi NFS su Windows.	7/Vista
+nltest	mostra informazioni sui canali sicuri negli Active Directory Domain Services (AD DS) e testa queste connessioni.	10/8/7
+nslookup	invia una richiesta DNS a un determinato IP o a un determinato nome host dei DNS server preimpostati. In alternativa si può indicare un altro server DNS.	10
+ntsd	esegue il processo di debug.	XP
+pathping	fornisce informazioni sul reindirizzamento e le perdite dei pacchetti al momento dell’invio in una rete e indica anche il tempo di latenza.	10/8/7/Vista/XP
+ping	invia una richiesta echo del protocollo Internet Control Message a un determinato host per verificare se è raggiungibile. Inoltre viene indicata la durata che la richiesta echo ha impiegato. Con -t si possono inviare progressivamente segnali ping. Premete i tasti CTRL + Interr per visualizzare la statistica relativa a questa azione. Potete interrompere il procedimento con CTRL + C.	qualsiasi versione Win
+qappsrv	mostra tutti i computer remoti disponibili nella rete.	10/8/7/Vista/XP
+qwinsta	mostra le informazioni sulle sessioni aperte del desktop remoto.	10/8/7/Vista
+rasautou	gestisce gli indirizzi autodial.	10/8/7/Vista/XP
+rasdial	avvia e termina le connessioni di rete per i client Microsoft.	10/8/7/Vista/XP
+rcp	copia i file di un computer Windows su un server su cui funziona un demone RSDH e viceversa.	7/Vista/XP
+rdpsign	firma un file del protocollo Remote Desktop (file RDP).	10/7
+rexec	esegue comandi su un computer remoto su cui è in funzione un demone Rexec.	Vista/XP
+route	mostra la tabella di routing e permette di modificarne i record (change), di aggiungerli (add) o cancellarli (delete).	qualsiasi versione Win
+rpcinfo	invia una Remote Procedure Call (RPC) a un server RPC. Il risultato mostra i programmi sul computer remoto. Per utilizzare il comando devono essere attivati i servizi NFS su Windows.	7/Vista
+rpcping	invia un ping a un server tramite Remote Procedure Call (RPC) e verifica così se è possibile una connessione.	10/8/7/Vista
+rsh	esegue comandi sui computer remoti su cui funziona il programma di UNIX Remote Shell (RSH).	7/Vista/XP
+setspn	crea, cancella e modifica SPN, cioè dei denominatori univoci per servizi in una rete che utilizza l’autenticazione Kerberos.	10/8/7
+shadow	controlla la sessione su un computer remoto. Inoltre l’utente può anche controllare attivamente il computer remoto.	7/Vista/XP
+showmount	fornisce informazioni sui file di sistema NFS. Per utilizzare il comando dovete attivare preliminarmente i servizi NFS su Windows.	7/Vista
+tcmsetup	attiva o disattiva un client per la Telephony Application Programming Interface (TAPI), un’interfaccia di programmazione per le applicazioni di telefonia.	10/8/7/Vista/XP
+telnet	consente la comunicazione con un altro computer che utilizza anche il protocollo telnet.	qualsiasi versione Win/DOS
+tftp	consente uno scambio di file tra il computer locale e un server, che supporta il Trivial File Transfer Protocol (TFTP). Per utilizzare il comando deve essere attivo il client TFTP nelle impostazioni di sistema.	10/8/7/Vista/XP
+tlntadmn	gestisce un server telnet su un computer locale o remoto. Per utilizzare il comando devono essere attive le funzioni del server telnet nelle impostazioni di sistema.	8/7/Vista/XP
+tracert	segue un pacchetto nel percorso dalla rete a un server. Non viene solo verificato se il pacchetto arriva e quanto tempo impiega, ma vengono registrati anche gli hop che il pacchetto fa lungo il suo percorso. Tutti i pacchetti hanno un Time-To-Live (TTL) predefinito che aumenta per gradi con il comando.	qualsiasi versione Win
+tscon	collega la sessione utente locale e corrente con una sessione in un computer remoto.	10/8/7/Vista/XP
+tsdiscon	termina la connessione tra una sessione utente locale e corrente con una sessione in un computer remoto.	10/8/7/VistaXP
+tskill	termina un processo su un computer remoto.	10/8/7/Vista/XP
+tsshutdn	spegne un terminale remoto o lo riavvia. Se il computer in questione lo supporta, si può anche spegnere completamente il computer in questo modo.	XP
+umount	rimuove i drive integrati del file system di rete. Per utilizzare il comando dovete attivare le funzioni NFS nel pannello di controllo.	7/Vista
+w32tm	gestisce il servizio dell’ora per Windows, sincronizzando la data e l’ora su tutti i computer che si trovano insieme in uno dei domini AD-DS.	10/8/7/Vista/XP
+waitfor	invia un segnale o ne aspetta uno. Se il segnale non deve essere inviato a tutti i computer in un dominio ma solo a uno in particolare, si utilizza il parametro /S. Con il comando i computer all’interno di una rete vengono sincronizzati.	10/8/7/Vista
+wecutil	crea e gestisce gli abbonamenti per gli eventi che vengono reindirizzati dall’origine degli eventi remoti che supportano il protocollo di gestione WS.	10/8/7/Vista
+winrm	gestisce le connessioni sicure tra computer locali e remoti tramite il protocollo di gestione WS.	10/8/7/Vista
+winrs	consente di accedere tramite una connessione sicura alla riga di comando di un computer remoto e di apportare così le modifiche. Se la crittografia deve essere interrotta, utilizzate –un.	10/8/7/Vista
+wsmanhttpconfig	gestisce le funzioni di Windows Remote Management (winrm).	10/8/7/Vista
+COMANDI DI MS-DOS
+•	assoc - visualizza o modifica le applicazioni associate alle estensioni dei file.
+•	assign - reindirizza tutte le richieste a un drive, verso un altro drive
+•	attrib - visualizza o modifica gli attributi dei file
+•	backup - crea una copia di sicurezza di uno o più file su una serie di floppy-disk
+•	break - abilita o disabilita l'interruzione o l'esecuzione fornita da CTRL C e CTRL BREAK
+•	cd - lett. change directory, entra in una directory. Sintassi: "cd \" per entrare nella root, e "cd <percorso directory>" per entrare in altra cartella.
+•	cd.. - esce da una directory.
+•	chdir - cambia la directory corrente o ne visualizza il nome
+•	chkdsk - analizza il contenuto del disco e visualizza una relazione sul suo stato
+•	cls - cancella il contenuto della schermata (questo comando non è distruttivo)
+•	cmd - avvia un nuovo interprete dei comandi MS-DOS
+•	color - permette di impostare il colore dello sfondo e del testo
+•	command - avvia un nuovo interprete dei comandi MS-DOS
+•	comp - confronta il contenuto di due o più file e ne mostra le differenze
+•	copy - copia uno o più file in un'altra posizione
+•	copy con - crea un file di testo
+•	ctty - cambia la console di input/output da cui vengono impostati i comandi
+•	date - visualizza e permette di aggiornare la data
+•	defrag - riorganizza i file in un disco rigido per ottimizzarne l'uso
+•	del - cancella uno o più file
+•	deltree - elimina una directory e tutti i file e le sottodirectory in essa contenute.
+
+•	dir - visualizza il contenuto di una directory (dir/p - si ferma ad ogni pagina) (dir/W - visualizza in colonne).
+•	diskcomp - confronta il contenuto di due dischetti dello stesso tipo
+•	diskcopy - copia il contenuto di un disco floppy in un altro disco floppy
+•	doskey - modifica le righe di comando, richiama i comandi di Windows e crea macro.
+•	echo - abilita o disabilita l'eco da file batch
+•	edit - avvia MS-DOS Editor per creare o modificare i file ASCII
+•	edlin - avvia un editor di righe di testo. Per magg. informazioni (Prompt comandi e edlin/?)
+•	emm386 - abilita o disabilita la memoria espansa di EMM386
+•	erase - cancella uno o più file specificati
+•	exe2bin - converte in formato binario un file eseguibile
+•	exit - provoca l'uscita da un interprete di comandi secondario per ritornare a un interprete di comandi o ad un programma precedenti
+•	expand - decomprime uno o più file compressi.
+•	fastopen - accelera l'apertura di un programma.
+•	fc - confronta il contenuto di due file.
+•	fdisk - configura un disco rigido creando le partizioni, per l'utilizzo di MS-DOS.
+•	find - ricerca una sequenza di caratteri all'interno di uno o più file.
+•	for - permette di eseguire in modo iterativo comandi di MS-DOS.
+•	format - formatta un disco per l'utilizzo di MS-DOS.
+•	getmac - visualizza le informazioni sul Mac address.
+•	goto - trasferisce l'esecuzione ad una determinata posizione di un file batch.
+•	graftabl - carica in memoria i caratteri ASCII non BIOS per i modi grafici.
+•	help - visualizza la guida di MS-DOS. ATTENZIONE: la guida è troppo lunga per essere visualizzata in una sola schermata, quindi per visualizzarla schermata per schermata digitare "help|more" (il simbolo "|" è il tasto alla sinistra tasto uno (1) altrimenti tenere premuto tasto "alt" e digitare "124" che corrisponde al simbolo "|" e digitare "more"
+•	hexdump - lista in formato esadecimale il contenuto di un file, byte per byte
+•	hostname - visualizza il nome dell'host dal quale si lancia il comando
+•	if - condiziona l'esecuzione di un comando in un file batch
+•	if not - esegue un comando se la condizione stabilita non è rispettata
+•	ipconfig - visualizza ip attuale del computer. Per visualizzare tutti i dettagli, digitare ipconfig /all
+•	join - unisce un drive di disk ad una directory vuota su di un altro drive
+•	keyb - configura la tastiera per la lingua specificata
+•	label - crea, modifica o elimina l'etichetta di volume di un disco
+•	md - crea una directory (si può utilizzare anche il comando mkdir, abbreviazione di "make directory")
+•	mem - visualizza la quantità della memoria usata e quella libera del sistema
+•	mode - stabilisce le modalità di visualizzazione e trasmissione per la stampante
+•	more - permette la visualizzazione di informazioni (files, pagine, o altri tipi di dati), che per la loro grandezza (insieme di righe) devono essere visualizzate con più schermate alla volta. ATTENZIONE: è necessario che "more" sia preceduto dal simbolo "|" ALT+124. Ex. help|more.
+•	move - sposta uno o più file in un'altra posizione
+•	nomefile - apre il file corrispondente al nome digitato
+•	netsh - per dns
+•	netsh winsock reset - risolve problemi di dns
+•	netstat - visualizza quali porte sono in ascolto sul pc locale
+•	path - visualizza o imposta un percorso di ricerca per file eseguibili.
+•	pause - provoca una pausa nell'esecuzione di un file batch per consentire un input da operatore.
+•	powercfg - permette di gestire l'energia.
+•	print - stampa un file di testo.
+•	prompt - cambia il prompt dei comandi di MS-DOS
+•	rd - cancella una directory
+•	recover - recupera un file o un intero disco con settori danneggiati
+•	recimg - crea un'immagine di sistema
+•	rem - visualizza commenti durante l'esecuzione di un file batch
+•	ren - rinomina uno o più file
+•	replace - sostituisce i file
+•	restore - ripristina dai dischi di back-up un certo numero di file
+•	rmdir - rimuove una sottodirectory vuota
+•	select - copia il dischetto MS-DOS per creare una copia di lavoro per la nazionalità selezionata della tastiera
+•	set - assegna un valore di sostituzione ad un parametro con chiave presente in un programma applicativo o in un file batch (per visualizzare le variabili d'ambiente usare solo set)
+•	sfc - System File Checker. sfc /scannow (comando base) serve per verificare l'integrità di tutti i file protetti del sistema e se trova delle versioni di file diverse o danneggiate provvede a sostituirle con le versioni originali. Per questo comando necessario operare come amministratore del sistema, ulteriori comandi addizionali sono "sfc/scanonce; /scanboot; /revert; /purgecache; /cachesize=x". ATTENZIONE - alcuni comandi richiedono di modificare la chiave di registro corrispondente
+•	share - installa la condivisione ed il bloccaggio dei file MS-NET
+•	shift - aumenta il numero di parametri sostituibili in un file batch
+•	sort - ordina i dati alfabeticamente, in un senso o nell'altro
+•	subst - associa un percorso ad una lettera di unità
+•	sys - copia i file di sistema di MS-DOS e l'interprete dei comandi sul disco specificato
+•	time - visualizza e consente di modificare l'ora
+•	timeout - attende un certo numero di tempo prima di eseguire un'azione
+•	tree - visualizza tutte le directory ed i percorsi del drive specificato
+•	type - visualizza il contenuto di un file di testo
+•	undelete - ripristina i file cancellati precedentemente con il comando del
+•	unformat - ripristina i dati di un disco cancellati con il comando format
+•	ver - visualizza la versione di MS-DOS in uso
+•	verify - abilita la verifica dei dati in scrittura
+•	vol - visualizza l'etichetta e il numero di serie di volume del disco
+•	xcopy - copia i file e la struttura delle directory (ad esclusione dei file nascosti e di sistema)
+•	wmic - Visualizza le informazioni relative a WMI all'interno della shell dei comandi interattivi
+•	[comando]/? - visualizza le funzioni disponibili per il comando

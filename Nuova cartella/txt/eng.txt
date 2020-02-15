@@ -1,0 +1,19 @@
+network
+A computer network, in computer science and telecommunications, is a type of telecommunications network characterized by a set of hardware devices with appropriate switching software, i.e. nodes connected to each other by special communication channels (links), such to provide a communication service that allows the exchange and sharing of data and communication between multiple users or distributed devices or terminals. The data is transferred in the form of PDU (Packet Data Unit), consisting of a header (which contains the data for the delivery of the message) and a body (which contains the body of the message), all regulated by rigid protocols.
+
+Binary nuber
+a binary number is a number expressed in the base-2 numeral system or binary numeral system, which uses only two symbols: typically "0" (zero) and "1" (one).
+The base-2 numeral system is a positional notation with a radix of 2. Each digit is referred to as a bit. Because of its straightforward implementation in digital electronic circuitry using logic gates, the binary system is used by almost all modern computers and computer-based devices.
+
+
+adress
+
+An address is a collection of information, presented in a mostly fixed format, used to give the location of a building, apartment, or other structure or a plot of land, generally using political boundaries and street names as references, along with other identifiers such as house or apartment numbers and organization name. Some addresses also contain special codes, such as a postal code, to make identification easier and aid in the routing of mail.
+
+HOST	
+
+A network host is a computer or other device connected to a computer network. A host may work as a server offering information resources, services, and applications to users or other hosts on the network. Hosts are assigned at least one network address.
+
+
+Internet protocol
+The Internet Protocol (IP) is the principal communications protocol in the Internet protocol suite for relaying datagrams across network boundaries. Its routing function enables internetworking, and essentially establishes the Internet.
